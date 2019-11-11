@@ -1,7 +1,7 @@
 # react-django-mpa
 
 ## Setup
-In repo root directory, install dependencies and run migrations:
+In the repo root directory, install dependencies:
 ```
 npm i --dev
 pip install -r requirements.txt
