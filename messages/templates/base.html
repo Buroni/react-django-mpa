@@ -1,0 +1,19 @@
+{% load static %}
+{% load render_bundle from webpack_loader %}
+<!DOCTYPE html>
+<html>
+ <head>
+ 	 <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+	 <meta charset="UTF-8">
+	 <title>{{ title }}</title>
+ </head>
+ <body>
+	 <script>
+		  window.props = {{ react_props|safe }};
+		  window.react_mount = document.getElementById('react');
+	</script>
+	<div class="navbar">Static Navigation Bar</div>
+	 <div id="react"></div>
+	 {% render_bundle page_name %}
+ </body>
+</html>
