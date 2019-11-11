@@ -3,4 +3,4 @@ webpack-stats.json
 node_modules/
 messages/static/bundles/
 messages/__pycache__/
-reactsite/__pychache__/
+reactsite/__pycache__/
