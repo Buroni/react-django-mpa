@@ -40,6 +40,7 @@ The blue navigation bar is a static element inside the base template (not a Reac
 ## Todo
 * Add Typescript and SCSS support.
 * Figure out what to do with MobX in an MPA, since there's no longer a global app state when each component is being served independently. MobX may not be appropriate any more, since state would be handed into the component through an API call rather than through a FE data model.
+* Review our use of lifecycles and web APIs. Lifecycles work differently in SSR React, and the latter isn't available in SSR. See https://itnext.io/tips-for-server-side-rendering-with-react-e42b1b7acd57
 
 
 ## Reading
