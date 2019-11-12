@@ -32,6 +32,11 @@ So in order to create a new page in the app, first the React component for that 
 * Each Django view which is to pass data into a displayed React component should use the `ReactMixin`. This mixin attaches the props to be passed into the react component onto the `context` object, alongside the name of the webpack bundle to be loaded and some page metadata. 
 * The `ReactMixin` uses the `base.html` template, which loads the bundle using `django-webpack-loader` based on the `page_name` specified by the view component. In this template, the react props provided by the view's context are also attached to `window.props`, ready to be injected into the component by `pages/componentName` as mentioned in the previous section.
 
+## Screenshots
+The blue navigation bar is a static element inside the base template (not a React component). The message list below the bar is a React component.
+
+![List view](https://i.imgur.com/IrWxTe1.png)
+
 ## Todo
 * Add Typescript and SCSS support.
 * Figure out how our mobx data model will work inside a MPA.
